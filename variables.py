@@ -1,0 +1,12 @@
+train_path = 'mnist_train.csv'
+test_path = 'mnist_test.csv'
+train_pickle = 'train'
+test_pickle = 'test'
+tensor_shape = 784
+dense1 = 64
+dense2 = 32
+output = 10
+batch_size = 100
+num_epochs = 30
+saved_model = 'mnist_classifier.json'
+saved_weights = 'mnist_classifier.h5'
