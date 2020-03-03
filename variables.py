@@ -5,6 +5,7 @@ test_pickle = 'test'
 tensor_shape = 784
 dense1 = 64
 dense2 = 32
+seed = 42
 output = 10
 batch_size = 100
 num_epochs = 30
