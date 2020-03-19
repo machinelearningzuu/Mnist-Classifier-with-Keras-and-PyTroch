@@ -2,15 +2,11 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
 import keras
-from keras.models import model_from_json
-from keras.models import Sequential
+from keras.models import model_from_json, Sequential, Model
 from keras.layers.core import Dense
 from keras.layers.convolutional import Convolution2D, ZeroPadding2D
 from util import get_data
 from variables import *
-from keras import models
-from keras.models import Model
-from keras import layers
 from keras.layers.advanced_activations import LeakyReLU
 
 import numpy as np
