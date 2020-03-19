@@ -7,8 +7,8 @@ from variables import *
 import numpy as np
 from tensorflow.keras.models import model_from_json
 
-# np.random.seed(seed)
-# tf.compat.v1.set_random_seed(seed)
+# np.random.seed(42)
+# tf.compat.v1.set_random_seed(42)
 
 class myCallback(keras.callbacks.Callback):
     def on_epoch_end(self, epoch, logs={}):
@@ -72,7 +72,7 @@ class MnistClassifier(object):
     def predict(self,images,labels):
         if not isinstance(images[0], np.ndarray):
             y_pred = np.argmax(self.model.predict(np.array([images]))[0])
-            loss, accuracy = self.model.evaluate(images.reshape(1,tensor_shape),np.array([labels]))
+            loss, accuracy = self.model.evaluate(images.reshape(1,784),np.array([labels]))
         else:
             y_pred = np.argmax(self.model.predict(images), axis = 1)
             loss, accuracy = self.model.evaluate(images,labels)   
