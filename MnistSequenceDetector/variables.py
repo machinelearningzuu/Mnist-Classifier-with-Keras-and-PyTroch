@@ -1,0 +1,9 @@
+train_path = 'mnist_train.csv'
+test_path = 'mnist_test.csv'
+shift = 0.3
+zoom_range = [1.3, 1.3]
+img_dim = 28
+n_digits = 5
+batch_size = 100
+num_epochs = 15
+saved_weights = 'mnist_classifier.h5'
